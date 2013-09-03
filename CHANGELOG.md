@@ -8,9 +8,11 @@ of the master branch from the official eZ Publish Legacy repository.
 * Prepare support for PHP 7.0 and HHVM by adding them to the Travis CI build
   matrix (as allowed to fail).
 * Pull Requests from the official repository
-  * **[#738](https://github.com/ezsystems/ezpublish-legacy/pull/738) Ensure database connection for tests**  
+  * **[#738](https://github.com/ezsystems/ezpublish-legacy/pull/738) Fix EZP-21435/21436: Ensure database connection for tests**  
     Makes sure that a database connection is set when running the test suite
-    (this applies to tests in extensions)
+    (this applies to tests in extensions).
+  * **[#743](https://github.com/ezsystems/ezpublish-legacy/pull/743) Fix EZP-21477: URL wildcards with leading slash are not matched**  
+    Makes sure URL wildcards are matched with or without a leading slash.
   * **[#787](https://github.com/ezsystems/ezpublish-legacy/pull/787) Change constants to strings in array keys**  
     Replaces occurences of `$array[constant]` to `$array['key']`.
   * **[#809](https://github.com/ezsystems/ezpublish-legacy/pull/809) Added or replaced meaningful label for eZDebug messages**  

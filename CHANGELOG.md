@@ -10,8 +10,7 @@ of the master branch from the official eZ Publish Legacy repository.
 * Pull Requests from the official repository
   * **[#652](https://github.com/ezsystems/ezpublish-legacy/pull/652) Fix EZP-20960: Contradictory error message in eZDFSFileHandlerMySQLiBackend::_fetch**
   * **[#735](https://github.com/ezsystems/ezpublish-legacy/pull/735) Add "cluster/storeFile" cluster event**  
-    Fixes the wrong use of the cluster event `cluster/deleteFile` and
-    replaces it with a new `cluster\storeFile` event.
+    Fixes the wrong use of the cluster event `cluster/deleteFile` and replaces it with a new `cluster\storeFile` event.
   * **[#736](https://github.com/ezsystems/ezpublish-legacy/pull/736) eZDFSFileHandlerMySQLiBackend: Added/fixed PHPDocs and shortened inline comments**  
     Makes IDEs happier.
   * **[#738](https://github.com/ezsystems/ezpublish-legacy/pull/738) Fix EZP-21435/21436: Ensure database connection for tests**  
@@ -19,14 +18,14 @@ of the master branch from the official eZ Publish Legacy repository.
     (this applies to tests in extensions).
   * **[#743](https://github.com/ezsystems/ezpublish-legacy/pull/743) Fix EZP-21477: URL wildcards with leading slash are not matched**  
     Makes sure URL wildcards are matched with or without a leading slash.
+  * **[#776](https://github.com/ezsystems/ezpublish-legacy/pull/776) Fix EZP-21614 : Avoid duplicate template compilation**  
+    Makes sure that templates don't get comiled twice if they are defined as standard design as well as additional site design.
   * **[#787](https://github.com/ezsystems/ezpublish-legacy/pull/787) Change constants to strings in array keys**  
     Replaces occurences of `$array[constant]` to `$array['key']`.
   * **[#809](https://github.com/ezsystems/ezpublish-legacy/pull/809) Added or replaced meaningful label for eZDebug messages**  
-    Instead of using hardcoded labels for debug messages, `__METHOD__` is
-    used to make it easier to locate the code that triggered a message.
+    Instead of using hardcoded labels for debug messages, `__METHOD__` is used to make it easier to locate the code that triggered a message.
   * **[#813](https://github.com/ezsystems/ezpublish-legacy/pull/813) Make eZPaymentLogger use eZLog** 
-    Replaces the custom logging implementation of the eZPaymentGateway with
-    the usage of the core `eZLog` component.
+    Replaces the custom logging implementation of the eZPaymentGateway with the usage of the core `eZLog` component.
 
 
 ## 1.0 - 2015-05-14

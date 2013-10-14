@@ -11,6 +11,8 @@ of the master branch from the official eZ Publish Legacy repository.
   * **[#738](https://github.com/ezsystems/ezpublish-legacy/pull/738) Ensure database connection for tests**  
     Makes sure that a database connection is set when running the test suite
     (this applies to tests in extensions)
+  * **[#787](https://github.com/ezsystems/ezpublish-legacy/pull/787) Change constants to strings in array keys**  
+    Replaces occurences of `$array[constant]` to `$array['key']`.
   * **[#809](https://github.com/ezsystems/ezpublish-legacy/pull/809) Added or replaced meaningful label for eZDebug messages**  
     Instead of using hardcoded labels for debug messages, `__METHOD__` is
     used to make it easier to locate the code that triggered a message.

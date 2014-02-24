@@ -721,7 +721,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
                                 }
                                 else
                                 {
-                                    eZDebug::writeError( "Unknown content object state group '$stateGroupID'" );
+                                    eZDebug::writeError( "Unknown content object state group '$stateGroupID'", __METHOD__ );
                                     continue 2;
                                 }
                             }
@@ -1352,7 +1352,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
                 if ( $totalAttributesFiltersCount == $invalidAttributesFiltersCount )
                 {
-                    eZDebug::writeNotice( "Attribute filter returned false" );
+                    eZDebug::writeNotice( "Attribute filter returned false", __METHOD__ );
                     $filterSQL = false;
                 }
                 else
@@ -1976,7 +1976,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
         $classCondition          = eZContentObjectTreeNode::createClassFilteringSQLString( $params['ClassFilterType'], $params['ClassFilterArray'] );
         if ( $classCondition === false )
         {
-            eZDebug::writeNotice( "Class filter returned false" );
+            eZDebug::writeNotice( "Class filter returned false", __METHOD__ );
             return null;
         }
 
@@ -2142,7 +2142,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
     {
         if( !is_array( $nodesParams ) || !count( $nodesParams ) )
         {
-            eZDebug::writeWarning( __METHOD__.': Nodes parameter must be an array with at least one key.' );
+            eZDebug::writeWarning( 'Nodes parameter must be an array with at least one key.', __METHOD__ );
             return null;
         }
 
@@ -2172,7 +2172,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
 
             if ( !is_numeric( $nodeID ) && !is_array( $nodeID ) )
             {
-                eZDebug::writeWarning( __METHOD__.': Nodes parameter must be numeric or an array with numeric values.' );
+                eZDebug::writeWarning( 'Nodes parameter must be numeric or an array with numeric values.', __METHOD__ );
                 $retValue = null;
                 return $retValue;
             }
@@ -3000,7 +3000,7 @@ class eZContentObjectTreeNode extends eZPersistentObject
         }
         else if ( count( $nodeListArray ) > 1 )
         {
-            eZDebug::writeError( $nodeListArray , "There are more then one main_node for objectID: $objectID" );
+            eZDebug::writeError( "There are more then one main_node for objectID $objectID: " . implode( ', ', $nodeListArray ), __METHOD__ );
         }
 
         return null;
@@ -6115,13 +6115,13 @@ class eZContentObjectTreeNode extends eZPersistentObject
     {
         if ( !$node )
         {
-            eZDebug::writeWarning( 'No such node to update visibility for.' );
+            eZDebug::writeWarning( 'No such node to update visibility for.', __METHOD__ );
             return;
         }
 
         if ( !$parentNode )
         {
-            eZDebug::writeWarning( 'No parent node found when updating node visibility' );
+            eZDebug::writeWarning( 'No parent node found when updating node visibility', __METHOD__ );
             return;
         }
 

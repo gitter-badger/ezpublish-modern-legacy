@@ -1,6 +1,6 @@
 # eZ Publish Legacy (4.x) Advanced
 
-A drop in replacement for eZ Publish Legacy (4.x).
+A drop in replacement for modern eZ Publish Legacy (4.x) projects.
 
 ## Why?
 

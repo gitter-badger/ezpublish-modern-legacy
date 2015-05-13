@@ -15,3 +15,8 @@
 /vendor
 /composer.lock
 
+/extension
+!/extension/ezjscore
+!/extension/ezformtoken
+!/extension/ezoe
+

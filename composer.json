@@ -1,9 +1,12 @@
 {
-    "name":        "ezsystems/ezpublish-legacy",
-    "description": "eZ Publish LegacyStack (4.x)",
-    "homepage":    "http://share.ez.no",
+    "name":        "jeromegamez/ezpublish-legacy-advanced",
+    "description": "A drop in replacement for eZ Publish Legacy (4.x)",
+    "homepage": "https://github.com/jeromegamez/ezpublish-legacy",
     "license":     "GPL-2.0",
     "type":        "ezpublish-legacy",
+    "replace": {
+        "ezsystems/ezpublish-legacy": "*"
+    },
     "suggest": {
         "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required",
         "ext-curl": "Curl provides better support for interacting with other servers, like downloading packages over SSL",

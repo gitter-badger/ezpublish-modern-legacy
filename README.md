@@ -1,4 +1,4 @@
-# eZ Publish Legacy (4.x) Advanced
+# eZ Publish Modern Legacy (4.x)
 
 A drop in replacement for modern eZ Publish Legacy (4.x) projects.
 

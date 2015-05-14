@@ -1,7 +1,7 @@
 {
     "name":        "jeromegamez/ezpublish-modern-legacy",
     "description": "A drop in replacement for modern eZ Publish Legacy (4.x) projects.",
-    "homepage":    "https://github.com/jeromegamez/ezpublish-legacy",
+    "homepage":    "https://github.com/jeromegamez/ezpublish-modern-legacy",
     "license":     "GPL-2.0",
     "type":        "ezpublish-legacy",
     "replace": {

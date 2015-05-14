@@ -19,7 +19,7 @@
         "ezsystems/eztags-ls": "eztags is a full tagging/taxonomy solution for eZ Publish replacing the simpler builtin ezkeywords datatype"
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4.8",
         "ext-dom": "*",
         "ext-libxml": "*",
         "ext-mbstring": "*",

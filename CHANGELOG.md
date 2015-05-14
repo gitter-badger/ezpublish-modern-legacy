@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+* Prepare support for PHP 7.0 and HHVM by adding them to the Travis CI build
+  matrix (as allowed to fail).
+
 ## 1.0 - 2015-05-14
 
 Initial release with just a few changes.

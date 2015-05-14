@@ -3,6 +3,9 @@
 A drop in replacement for modern 
 [eZ Publish Legacy (4.x)](https://github.com/ezsystems/ezpublish-legacy) projects.
 
+[![Build Status](https://travis-ci.org/jeromegamez/ezpublish-modern-legacy.svg?branch=master)](https://travis-ci.org/jeromegamez/ezpublish-modern-legacy)
+
+
 ## Why?
 
 As eZ Systems is pushing towards the new eZ Platform (which, in the end,
@@ -16,9 +19,10 @@ enhancements.
 
 ## Goals
 
-- Drop support for PHP <5.3
+- Drop support for PHP <5.3 and prepare support for PHP 7.0 and HHVM
   - PHP 5.4 is the oldest supported PHP version, so eZ Publish ML will not settle
     for less :)
+
 - Apply Pull Requests that didn't make it into the original eZ Publish Legacy
   - This is done by cherry-picking the commits from the pull requests
 - Add additional functionality to ease extending the system
@@ -39,9 +43,17 @@ official eZ Systems release.
   
 ## Installation
 
+### Clean legacy installation
+
 ```bash
-composer create-project jeromegamez/ezpublish-modern-legacy my_project
+$ composer create-project jeromegamez/ezpublish-modern-legacy my_project
 ```
 
-From there, please refer to the
-[official eZ Publish Legacy documentation](https://doc.ez.no/eZ-Publish/).
+### Clean eZ Publish 5 Community installation
+
+```bash
+$ composer create-project --no-install ezsystems/ezpublish-community my_project
+$ cd my_project
+$ composer require --no-update jeromegamez/ezpublish-modern-legacy
+$ composer install
+```

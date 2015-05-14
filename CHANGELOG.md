@@ -5,6 +5,7 @@
 * Prepare support for PHP 7.0 and HHVM by adding them to the Travis CI build
   matrix (as allowed to fail).
 * Pull Requests from the offical repository
+  * [#738](https://github.com/ezsystems/ezpublish-legacy/pull/738) Ensure database connection for tests
   * [#813](https://github.com/ezsystems/ezpublish-legacy/pull/813) Make eZPaymentLogger use eZLog
 
 

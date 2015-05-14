@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 1.0 - 2015-05-14
 
 Initial release with just a few changes.
 

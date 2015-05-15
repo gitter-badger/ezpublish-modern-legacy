@@ -5,7 +5,6 @@ A drop in replacement for modern
 
 [![Build Status](https://travis-ci.org/jeromegamez/ezpublish-modern-legacy.svg?branch=master)](https://travis-ci.org/jeromegamez/ezpublish-modern-legacy)
 
-
 ## Why?
 
 As eZ Systems is pushing towards the new eZ Platform (which, in the end,

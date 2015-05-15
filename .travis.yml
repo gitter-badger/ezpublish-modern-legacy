@@ -20,6 +20,10 @@ env:
     - DB="mysql" DB_USER="root"
     - DB="postgresql" DB_USER="postgres"
 
+cache:
+  directories:
+    - $HOME/.composer/cache
+
 # Aim to run tests on all versions of php, make sure each db is run at least once
 matrix:
   fast_finish: true

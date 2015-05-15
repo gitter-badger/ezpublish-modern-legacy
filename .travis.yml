@@ -1,5 +1,7 @@
 language: php
 
+sudo: false
+
 php:
   - 5.4
   - 5.5
@@ -20,6 +22,7 @@ env:
 
 # Aim to run tests on all versions of php, make sure each db is run at least once
 matrix:
+  fast_finish: true
   allow_failures:
     - php: 7.0
     - php: hhvm

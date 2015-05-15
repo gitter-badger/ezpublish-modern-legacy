@@ -8,13 +8,17 @@ A drop in replacement for modern
 ## Why?
 
 As eZ Systems is pushing towards the new eZ Platform (which, in the end,
-will drop support for eZ Publish Legacy, changes to the old eZ Publish 
+will drop support for eZ Publish Legacy), changes to the old eZ Publish 
 are limited to a needed minimum, so that new features or changes absolutely
 needed to ensure a working eZ Publish 5.x/Platform.
 
-On the other hand, there are still projects based on the Legacy Core (and 
-without Enterprise Support) out there which would benefit from ongoing
-enhancements.
+But let's face it: there are still some pure eZ 4.x projects out there which
+need to be maintained, eZ Publish 5 relies on Legacy, and in the current state,
+eZ Platform does as well - so the legacy core will stay around for a while. 
+
+eZ Publish ML is for developers who want or have to rely on the "old" stack,
+but still would like to benefit from improvements and perhaps even new
+features.
 
 ## Goals
 
@@ -34,9 +38,13 @@ official eZ Systems release.
 
 - The releases of eZ Publish ML will always be based on the master branch of the
   official eZ Publish Repository.
-- This project is not affiliated to, supported or endorsed by eZ Systems.
+- This project is not affiliated to, supported or endorsed by eZ Systems or my
+  current employer (yet :)).
 - If you chose to replace an Enterprise Edition of eZ Publish Legacy with
-  eZ Publish ML, expect to lose your enterprise support. 
+  eZ Publish ML, expect to lose your enterprise support.
+- Obviously, if you use classes and methods from the `eZ\ModernLegacy` namespace
+  in your custom extensions, you will not be able to drop out of eZ Publish ML
+  again.
   
 ## Installation
 
@@ -54,3 +62,17 @@ $ cd my_project
 $ composer require --no-update jeromegamez/ezpublish-modern-legacy
 $ composer install
 ```
+
+### Using eZ Publish ML in your existing eZ Publish Community project
+
+If you have custom code inside your `ezpublish_legacy` folder, create a backup 
+of it first.  
+  
+```bash
+$ rm -rf {ezpublish_legacy,vendor}
+$ composer require jeromegamez/ezpublish-modern-legacy
+```
+
+Then, copy back your custom code into the newly created `ezpublish_legacy`
+folder.
+

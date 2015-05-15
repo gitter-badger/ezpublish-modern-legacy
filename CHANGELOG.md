@@ -8,6 +8,7 @@ of the master branch from the official eZ Publish Legacy repository.
 * Prepare support for PHP 7.0 and HHVM by adding them to the Travis CI build
   matrix (as allowed to fail).
 * Pull Requests from the official repository
+  * **[#652](https://github.com/ezsystems/ezpublish-legacy/pull/652) Fix EZP-20960: Contradictory error message in eZDFSFileHandlerMySQLiBackend::_fetch**
   * **[#735](https://github.com/ezsystems/ezpublish-legacy/pull/735) Add "cluster/storeFile" cluster event**  
     Fixes the wrong use of the cluster event `cluster/deleteFile` and
     replaces it with a new `cluster\storeFile` event.

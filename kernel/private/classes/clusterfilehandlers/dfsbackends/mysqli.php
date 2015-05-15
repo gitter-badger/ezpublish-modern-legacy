@@ -702,7 +702,6 @@ class eZDFSFileHandlerMySQLiBackend implements eZClusterEventNotifier
 
         $dfsFileSize = $this->dfsbackend->getDfsFileSize( $filePath );
         $loopCount = 0;
-        $localFileSize = 0;
 
         do
         {
@@ -750,13 +749,16 @@ class eZDFSFileHandlerMySQLiBackend implements eZClusterEventNotifier
                 unlink( $tmpFilePath );
             }
 
+            // The copied file on the FS doesn't match the source file on the DFS, so we delete it again
+            unlink( $filePath );
+
             usleep( self::TIME_UNTIL_RETRY );
             ++$loopCount;
         }
-        while ( $dfsFileSize > $localFileSize && $loopCount < $this->maxCopyTries );
+        while ( $dfsFileSize != $localFileSize && $loopCount < $this->maxCopyTries );
 
         // Copy from DFS has failed :-(
-        eZDebug::writeError( "Size ({$localFileSize}) of written data for file '{$filePath}' does not match expected size {$metaData['size']}", __METHOD__ );
+        eZDebug::writeError( "Size ($localFileSize) of written data for file '$filePath' does not match expected size {$dfsFileSize}", __METHOD__ );
         return false;
     }
 

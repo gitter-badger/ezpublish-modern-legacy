@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## 1.1 - 2015-05-15
 
 This release is based on [5908d5ee65](https://github.com/ezsystems/ezpublish-legacy/commit/5908d5ee65)
 of the master branch from the official eZ Publish Legacy repository.

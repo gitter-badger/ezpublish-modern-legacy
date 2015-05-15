@@ -37,5 +37,3 @@ of the master branch from the official eZ Publish Legacy repository.
 * Updated PHPUnit to ~4.6
 * Pull Requests from the official repository
   * **[#1170](https://github.com/ezsystems/ezpublish-legacy/pull/1170) Fix trimming DOMElement textContent properties (re-enables PHP 5.6 on Travis)**
-    Ensures that 
-

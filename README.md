@@ -37,6 +37,7 @@ official eZ Systems release.
 
 - The releases of eZ Publish ML will always be based on the master branch of the
   official eZ Publish Repository.
+- This project is not affiliated to, supported or endorsed by eZ Systems.
 - If you chose to replace an Enterprise Edition of eZ Publish Legacy with
   eZ Publish ML, expect to lose your enterprise support. 
   

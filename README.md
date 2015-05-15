@@ -18,15 +18,12 @@ enhancements.
 
 ## Goals
 
-- Drop support for PHP <5.3 and prepare support for PHP 7.0 and HHVM
-  - PHP 5.4 is the oldest supported PHP version, so eZ Publish ML will not settle
-    for less :)
-
+- Drop support for PHP <5.3 (PHP 5.4 is the oldest supported PHP version,
+  so eZ Publish ML will not settle for less :))
 - Apply Pull Requests that didn't make it into the original eZ Publish Legacy
-  - This is done by cherry-picking the commits from the pull requests
-- Add additional functionality to ease extending the system
+- Add additional functionality to ease usage and further improvements
 - Ensure existing functionality (all classes and methods must be preserved)
-- Replace old-fashioned components with new ones (e.g. `eZCLI` with `symfony/console`) 
+- Replace components state of the art ones (e.g. `eZLog` with `psr/log`) 
 - Enhance code quality
 - Enhance testability
 

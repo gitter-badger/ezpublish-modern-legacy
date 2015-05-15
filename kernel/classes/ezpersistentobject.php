@@ -49,6 +49,19 @@ class eZPersistentObject
      *
      * @param int|array $row
      */
+    public function __construct( $row )
+    {
+        $this->PersistentDataDirty = false;
+        if ( is_numeric( $row ) )
+            $row = $this->fetch( $row, false );
+        $this->fill( $row );
+    }
+
+    /**
+     * @param int|array $row
+     *
+     * @deprecated Use parent::__construct( $row ) instead
+     */
     public function eZPersistentObject( $row )
     {
         $this->PersistentDataDirty = false;

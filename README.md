@@ -1,5 +1,7 @@
 # eZ Publish Modern Legacy (ML)
 
+[![Join the chat at https://gitter.im/jeromegamez/ezpublish-modern-legacy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jeromegamez/ezpublish-modern-legacy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A drop in replacement for modern 
 [eZ Publish Legacy (4.x)](https://github.com/ezsystems/ezpublish-legacy) projects.
 
